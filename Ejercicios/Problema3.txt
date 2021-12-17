@@ -1,0 +1,17 @@
+Problema3
+
+  9 (0;0)  10 (0;1)  7 (0;2)  8 (0;3)
+ 10 (1;0)   5 (1;1)  7 (1;2)  9 (1;3)
+  7 (2;0)  9.4(2;1) 10 (2;2)  9 (2;3)
+
+
+1.  Inicio
+2.  (notasEstudiantes(3)(4),i[1-n])
+3.  fila, i[0-n]
+4.  columna, i[0-n]
+5.  valor, i[0-n]
+6.  (nombresEstudiantes(3), x(30)[{a-z},{A-Z},{BS}])
+7.  suma <-- 0
+nombresEstudiantes <--{"Jerry Ponce", "Gabriela Lewis", "David Bell"}
+8.  notasEstudiantes <-- {{9, 10, 7, 8}, {10, 5, 7, 9}, {7, 9.4, 10, 9}}
+9.  Para(fila<--0, fila<2, 1) haga //0<2|v //1<2|v
