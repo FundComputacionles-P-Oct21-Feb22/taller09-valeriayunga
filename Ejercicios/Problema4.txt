@@ -1,0 +1,56 @@
+Problema4
+1.Inicio
+
+2. (ventas(2)(5),i[0-n])
+3. fila, i[0-n]
+4. columna, i[0-n]
+6. (vendedores(2), x(30)[{a-z},{A-Z},{BS}])
+7. vendedores <--{"Jessica Cole", "Robert Wallaces"}
+8. total_ventas,d[0-n]
+9. suma, d[0-n] <-- 0
+10. venta_dia, d[0-n]
+
+
+11. Para(fila<--0, fila<2, 1) haga 
+				//0<2|v //1<2|v //2<2|f
+
+14.   Para(columna<--0, columna<5, 1) haga
+					//0<5|v //1<5|v //2<5|v //3<5|v //4<5|v //5<5|f
+					//0<5|v //1<5|v //2<5|v //3<5|v //4<5|v //5<5|f
+					
+12.	<<"Ingrese las ventas por día"
+13.	>>venta_dia  	//130//200//190//200//100
+			//150//200//160//180//210
+
+14.	ventas[fila][columna]<--venta_dia   
+					//ventas[0][0]<--130
+					//ventas[0][1]<--200
+			   		//ventas[0][2]<--190
+			  		//ventas[0][3]<--200
+			   		//ventas[0][4]<--100
+					//ventas[1][0]<--150
+					//ventas[1][1]<--200
+			   		//ventas[1][2]<--160
+			  		//ventas[1][3]<--180
+			   		//ventas[1][4]<--210
+
+
+	
+15.	suma<--suma + ventas[fila][columana]
+  					//0 + 130=130 //130+200=330 //330+190=520 //520+200=720 //720+100=820
+					//820+150=970 //970+200=1170 //1170+160=1330 //1330+180=1510 //1510+210=1720
+16.   Fin_Para
+20. Fin_Para
+
+19. <<"Vendedor(a)" + vendedores[0]+ "\n" + "Vendedor(a)" + vendedores[1]+"\n"+ "Han realizado un total de" +"$"+suma + en ventas.
+21.Fin
+
+-------------------------------------------------------------------
+//fila 0,1,2
+
+//columna 0,1,2,3,4,5,0,1,2,3,4,5
+ 
+//Pantalla
+Vendedor(a) Jessica Cole	
+Vendedor(a) Robert Wallace
+Ha realizado un total de $1720 en ventas.
